@@ -1,0 +1,25 @@
+h2{
+    text-align: center;
+}
+
+div {
+    text-align: center; /* Centrar el contenido del div */
+    margin-bottom: 20px; /* Espacio entre los elementos */
+}
+
+img {
+    width: 400px;
+    height: 300px;
+}
+
+/* Estilos para centrar texto */
+p {
+    text-align: justify; /* Justificar el texto */
+    margin-bottom: 20px; /* Espacio entre los párrafos */
+}
+
+.parr{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
