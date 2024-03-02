@@ -1,0 +1,63 @@
+body {
+    justify-content: center;
+    margin-top: 5%;
+    background-color: rgb(102, 99, 136);
+    background-image: url('img/imgfondo.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-family: Verdana;
+    font-size: 18px;
+}
+
+#contenedor {
+    justify-content: space-evenly;
+    display: flex;
+
+}
+
+#imgant,
+#imgsig {
+    width: 200px;
+    height: 150px;
+    border: ridge 6px rgb(74, 134, 194);
+    border-radius: 3%;
+    margin-top: 9%;
+    cursor: pointer;
+}
+
+.imgb:hover {
+    opacity: 0.6;
+}
+
+#imgpri {
+    width: 450px;
+    height: 350px;
+    border: ridge 6px rgb(74, 134, 194);
+    border-radius: 3%;
+    cursor: pointer;
+}
+
+#contB {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(74, 134, 194);
+}
+
+#contp {
+
+    width: 500px;
+    margin: 0 auto;
+    /* width: 50%; */
+    text-align: center;
+}
+
+#asd {
+    position: sticky -webkit-sticky;
+}
