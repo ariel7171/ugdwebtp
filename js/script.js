@@ -7,7 +7,7 @@ let titulos = ["Machu Picchu - Perú", "Petra - Jordania", "Chichen Itzá - Méx
 let links = ["paginas/machupichu/machupichu.html","paginas/petra/petra.html","paginas/chichenitza/chichenitza.html","paginas/acropolis/acropolis.html","paginas/giza/giza.html","paginas/agra/agra.html","paginas/paris/paris.html","paginas/alhambra/alhambra.html","paginas/coliseo/coliseo.html","paginas/timessquare/timessquare.html"]
 
 let texto =
-    ["Se destaca como el principal enclave arqueológico maya gracias a su ingenioso trazado urbano, la majestuosidad de sus estructuras y la meticulosa labor en piedra de sus edificaciones. En su diseño se aprovechó de manera notable la geografía de la colina que lo convirtió en un impresionante centro ceremonial.",
+    ["Se destaca como el principal enclave arqueológico maya gracias a su ingenioso trazado urbano, la majestuosidad de sus estructuras y la meticulosa labor en piedra de sus edificaciones. <br><br>En su diseño se aprovechó de manera notable la geografía de la colina que lo convirtió en un impresionante centro ceremonial.",
         "Conocida como la 'metrópolis olvidada', no solo por su largo período de abandono desde el siglo VI d.C., cuando sus residentes desertaron y cayó en el olvido, hasta su redescubrimiento en el siglo XIX por el explorador suizo Johann Ludwig Burckhardt, sino también por haber quedado sepultada bajo las dunas.",
         "La icónica ciudad maya de Chichén Itzá, inscrita como Patrimonio de la Humanidad por la UNESCO desde 1988 y reconocida como una de las Maravillas del Mundo desde 2007, destacó como un importante centro cultural y político de la antigua civilización maya y fue uno de los núcleos poblacionales más grandes en el centro-norte de la península de Yucatán.",
         "La Acrópolis, conocida como la 'ciudad alta', era un elemento distintivo en la mayoría de las urbes griegas, con funciones defensivas y como sede de los principales templos. La Acrópolis de Atenas alberga algunos de los monumentos más emblemáticos de la Grecia clásica: el Partenón, el Erecteion, el Templo de Atenea Niké y los Propileos destacan como algunas de las estructuras más notables y magníficas.",
@@ -57,7 +57,7 @@ function actualizarContenido(flag) {
 
     titulo.textContent = titulos[indice];
 
-    parrafo.textContent = texto[indice];
+    parrafo.innerHTML = texto[indice];
 
     imglink.href = links[indice];
 }
