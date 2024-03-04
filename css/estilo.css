@@ -18,7 +18,7 @@ body {
     height: 150px;
 
     border-radius: 3%;
-    margin-top: 9%;
+    margin-top: 10%;
     cursor: pointer;
 }
 
@@ -54,7 +54,7 @@ h1 {
 }
 
 p {
-    line-height: 1.5;
+    line-height: 2;
     color: rgb(66, 64, 64);
 }
 
