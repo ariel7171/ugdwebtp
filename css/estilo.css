@@ -74,19 +74,6 @@ h3{
     top: 0;
 }
 
-.cabecera{
-
-    height: 60px;
-    border: solid 13px rgb(57, 6, 102);
-    border-radius: 10px;
-   /* padding: 2em;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(129, 17, 205);
-
-    
-}
 
 table{
     background-color: rgb(36, 94, 94);
