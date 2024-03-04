@@ -1,0 +1,22 @@
+#p1{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+div {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+h2{
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+}
+
+p {
+    text-align: justify; 
+    margin-bottom: 20px; 
+}
