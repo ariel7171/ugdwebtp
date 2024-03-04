@@ -81,20 +81,22 @@ function obtenerIndice(flag) { // Si flag es true el indice avanza sino retroced
     return aux;
 
 }
-
-
- let th = document.getElementById("columna2").value;
-let tabla = document.getElementById("mitabla")
-let columna = tabla.rows[0];
-console.log(columna)
+let th = document.getElementById("home").value;
+let con = document.getElementById("contenedor").value;
 function cambiarClick(th){
-    th.style.backgroundColor = "#68B3C8";
+    th.style.backgroundColor = "#49362e";
+    /*th.style.textDecoration = "line-through";*/
+    th.style.borderRadius = "10px"
+    
+    
      
 }
 function cambio(th){
     th.style.backgroundColor = "";
+   /* th.style.textDecoration = "";*/
+    th.style.borderRadius = ""
+  
 }
-
 
 
 
