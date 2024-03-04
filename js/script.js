@@ -4,7 +4,7 @@ let imagenes = ["img/machupichu.jpg", "img/petra.jpg", "img/chichenitza.jpg", "i
 
 let titulos = ["Machu Picchu - Perú", "Petra - Jordania", "Chichen Itzá - México", "La Acrópolis - Grecia", "Las Pirámides de Giza - Egipto", "El Taj Mahal - India", "La Torre Eiffel - Francia", "La Alhambra - España", "Coliseo - Italia", "Times Square - Estados Unidos"];
 
-let links = ["paginas/machupichu/machupichu.html","paginas/petra/petra.html","paginas/chichenitza/chichenitza.html","paginas/acropolis/acropolis.html","paginas/giza/giza.html","paginas/tajmahal/tajmahal.html","paginas/torreeiffel/torreeiffel.html","paginas/alhambra/alhambra.html","paginas/coliseo/coliseo.html","paginas/timessquare/timessquare.html"]
+let links = ["paginas/machupichu/machupichu.html","paginas/petra/petra.html","paginas/chichenitza/chichenitza.html","paginas/acropolis/acropolis.html","paginas/giza/giza.html","paginas/agra/agra.html","paginas/paris/paris.html","paginas/alhambra/alhambra.html","paginas/coliseo/coliseo.html","paginas/timessquare/timessquare.html"]
 
 let texto =
     ["Se destaca como el principal enclave arqueológico maya gracias a su ingenioso trazado urbano, la majestuosidad de sus estructuras y la meticulosa labor en piedra de sus edificaciones. En su diseño se aprovechó de manera notable la geografía de la colina que lo convirtió en un impresionante centro ceremonial.",
