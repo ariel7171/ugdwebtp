@@ -4,6 +4,8 @@ let imagenes = ["img/machupichu.jpg", "img/petra.jpg", "img/chichenitza.jpg", "i
 
 let titulos = ["Machu Picchu - Perú", "Petra - Jordania", "Chichen Itzá - México", "La Acrópolis - Grecia", "Las Pirámides de Giza - Egipto", "El Taj Mahal - India", "La Torre Eiffel - Francia", "La Alhambra - España", "Coliseo - Italia", "Times Square - Estados Unidos"];
 
+let links = ["paginas/machupichu/machupichu.html","paginas/petra/petra.html","paginas/chichenitza/chichenitza.html","paginas/acropolis/acropolis.html","paginas/giza/giza.html","paginas/tajmahal/tajmahal.html","paginas/torreeiffel/torreeiffel.html","paginas/alhambra/alhambra.html","paginas/coliseo/coliseo.html","paginas/timessquare/timessquare.html"]
+
 let texto =
     ["Se destaca como el principal enclave arqueológico maya gracias a su ingenioso trazado urbano, la majestuosidad de sus estructuras y la meticulosa labor en piedra de sus edificaciones. En su diseño se aprovechó de manera notable la geografía de la colina que lo convirtió en un impresionante centro ceremonial.",
         "Conocida como la 'metrópolis olvidada', no solo por su largo período de abandono desde el siglo VI d.C., cuando sus residentes desertaron y cayó en el olvido, hasta su redescubrimiento en el siglo XIX por el explorador suizo Johann Ludwig Burckhardt, sino también por haber quedado sepultada bajo las dunas.",
@@ -23,6 +25,7 @@ let imgpri = document.getElementById("imgpri");
 let imgsig = document.getElementById("imgsig");
 let titulo = document.getElementById("titulo");
 let parrafo = document.getElementById("parrafo1");
+let imglink = document.getElementById("imglink");
 
 function anterior() {
 
@@ -54,6 +57,7 @@ function actualizarContenido(flag) {
 
     parrafo.textContent = texto[indice];
 
+    imglink.href = links[indice];
 }
 
 function obtenerIndice(flag) { // Si flag es true el indice avanza sino retrocede.
