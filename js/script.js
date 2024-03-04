@@ -44,8 +44,10 @@ function actualizarContenido(flag) {
     indice = obtenerIndice(flag);
 
     let indiceAnt = obtenerIndice(false);
+    console.log(indiceAnt);
 
     let indiceSig = obtenerIndice(true);
+    console.log(indiceSig);
 
     imgant.src = imagenes[indiceAnt];
 
@@ -79,4 +81,22 @@ function obtenerIndice(flag) { // Si flag es true el indice avanza sino retroced
     return aux;
 
 }
+
+
+ let th = document.getElementById("columna2").value;
+let tabla = document.getElementById("mitabla")
+let columna = tabla.rows[0];
+console.log(columna)
+function cambiarClick(th){
+    th.style.backgroundColor = "#68B3C8";
+     
+}
+function cambio(th){
+    th.style.backgroundColor = "";
+}
+
+
+
+
+
 

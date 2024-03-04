@@ -43,6 +43,7 @@ body {
     display: flex;
     justify-content: center;
 }
+/*APARTIR DE ACA ES DE MANUEL*/
 
 h1 {
     text-align: center;
@@ -61,3 +62,54 @@ h1 {
 #asd {
     position: sticky -webkit-sticky;
 }
+h3{
+    text-shadow: 2px 2px 2px black ;
+    font-size: 33px;
+    text-align: center;
+}
+
+.principal{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.cabecera{
+
+    height: 60px;
+    border: solid 13px rgb(57, 6, 102);
+    border-radius: 10px;
+   /* padding: 2em;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(129, 17, 205);
+
+    
+}
+
+table{
+    background-color: rgb(36, 94, 94);
+    border-radius: 6px;
+}
+th, td {
+    padding: 10px; 
+    text-align: center;
+   
+}
+#Copi{
+    border: 2px solid rgb(156, 156, 168);
+    width: 150px;
+    position: relative;
+    left: 1170px;
+    bottom:-800px;
+}
+
+
+
+   /*#derechos{
+position: relative;
+bottom: 0px;
+left: 950px;
+
+}*/
