@@ -79,7 +79,7 @@ function validar() {
     tr2.appendChild(td2Mensaje);
     tbody.appendChild(tr2);
     
-    
+        break;
    
         
        }
