@@ -38,6 +38,11 @@ label {
     border-radius: 5px;
     font-size: 16px;
 }
+table{
+    position: relative;
+    left: 50px;
+    bottom: 280px
+}
 
 #mensaje{
     width: 90%;

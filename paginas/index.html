@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingreso de datos</title>
-    <script src="/js/app.js" defer></script>
+    
     <link rel="stylesheet" href="../css/estilo2.css">
+    <script src="../js/app.js" defer></script>
 </head>
 
-<body>
+<body id="body">
 
 
 
     <div id="contenedor">
 
-        <form action="#" name="formulario" id="formulario" onsubmit="return validar()" method="post">
+        <form action="#" name="formulario" id="formulario" onsubmit="event.preventDefault(); return validar()"  method="post">
 
             <h2>Ingrese sus datos</h2>
 
@@ -62,7 +63,7 @@
             </p>
 
             <div id="c5">
-                <input type="submit" id="enviar" value="Enviar">
+                <input type="submit"  id="enviar" value="Enviar">
             </div>
 
 
@@ -71,7 +72,25 @@
 
         </form>
     </div>
+   
+<table border>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Gmail</th>
+            <th>Mensaje</th>
+        </tr>
 
+        <tbody>
+            <td id="td1"></td>
+            <td id="td2"></td>
+            <td id="td3"></td>
+            <td id="td4"></td>
+        </tbody>
+    </thead>
+</table>
+   
 </body>
 
 </html>
