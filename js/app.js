@@ -1,6 +1,9 @@
 
 
 
+
+
+
 function validar() {
 
     var miformulario = document.forms["formulario"]
@@ -27,23 +30,59 @@ function validar() {
 
 
         parrafo.innerText="datos ingresados correctamente"
-       
-     
+        let table = document.createElement('table');
+        let thead = document.createElement('thead');
+        let tbody = document.createElement('tbody');
+        
+        table.appendChild(thead);
+        table.appendChild(tbody);
+        
+        
+        document.getElementById('body').appendChild(table);
+        
+        let tr1 = document.createElement('tr');
+        let thead1 = document.createElement('th');
+        thead1.innerHTML = 'nombre';
+        let thead2 = document.createElement('th');
+        thead2.innerHTML = 'apellido';
+        let thead3 = document.createElement('th');
+        thead3.innerHTML = 'gmail';
+        let thead4 = document.createElement('th');
+        thead4.innerHTML = 'mensaje';
+        
+        tr1.appendChild(thead1);
+        tr1.appendChild(thead2);
+        tr1.appendChild(thead3);
+        tr1.appendChild(thead4);
+        thead.appendChild(tr1);
+        
+        
 
    
    
 
   let array=[td1,td2,td3,td4];
   for(let i=0;i<array.length;i++){
-      document.getElementById("td1").innerHTML=array[0]
-      document.getElementById("td2").innerHTML=array[1]
-      document.getElementById("td3").innerHTML=array[2]
-      document.getElementById("td4").innerHTML=array[3]
       
+    let tr2 = document.createElement('tr');
+    let td2Nombre = document.createElement('td');
+    td2Nombre.innerHTML = array[0]
+    let td2Apellido = document.createElement('td');
+    td2Apellido.innerHTML = array[1]
+    let td2Gmail = document.createElement('td');
+    td2Gmail.innerHTML = array[2]
+    let td2Mensaje = document.createElement('td');
+    td2Mensaje.innerHTML = array[3]
+    tr2.appendChild(td2Nombre);
+    tr2.appendChild(td2Apellido);
+    tr2.appendChild(td2Gmail);
+    tr2.appendChild(td2Mensaje);
+    tbody.appendChild(tr2);
     
-  }
+    
+   
         
-       
+       }
 
 
         
@@ -94,6 +133,7 @@ btn.addEventListener("click", function comprobar() {
     }
 
 })
+ 
 
 
 

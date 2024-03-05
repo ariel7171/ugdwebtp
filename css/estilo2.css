@@ -38,11 +38,27 @@ label {
     border-radius: 5px;
     font-size: 16px;
 }
+
+
 table{
-    position: relative;
-    left: 50px;
-    bottom: 280px
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1%;
+   
 }
+
+th, td{
+    padding: 5px;
+    border: 1px solid #000;
+   
+    
+}
+
+
+
+
 
 #mensaje{
     width: 90%;
