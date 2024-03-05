@@ -13,20 +13,17 @@ function validar() {
     let parrafo = document.getElementById("parrafo")
 
 
-    let nombre = miformulario.nombre.value;
-    let email = miformulario.gmail.value
-    let apellido = miformulario.apellido.value;
-    let mensaje = miformulario.mensaje.value
+    let nombre = miformulario.nombre;
+    let email = miformulario.gmail
+    let apellido = miformulario.apellido;
+    let mensaje = miformulario.mensaje
 
     
-    let td1=miformulario.nombre.value
-    let td2=miformulario.apellido.value
-    let td3=miformulario.gmail.value
-   let td4=miformulario.mensaje.value
+   
   
    
 
-    if (patronNombre.test(nombre) && patronEmail.test(email) && patronNombre.test(apellido) && mensaje != "") {
+    if (patronNombre.test(nombre.value) && patronEmail.test(email.value) && patronNombre.test(apellido.value) && mensaje.value != "") {
 
 
         parrafo.innerText="datos ingresados correctamente"
@@ -61,7 +58,7 @@ function validar() {
    
    
 
-  let array=[td1,td2,td3,td4];
+  let array=[nombre.value,apellido.value,email.value,mensaje.value];
   for(let i=0;i<array.length;i++){
       
     let tr2 = document.createElement('tr');
@@ -90,7 +87,7 @@ function validar() {
 
 
 
-    } else if (nombre == "" || email == "" || apellido == "" || mensaje == "") {
+    } else if (nombre.value == "" || email.value == "" || apellido.value == "" || mensaje.value == "") {
 
 
         parrafo.innerText = "no deje espacios en blanco"
@@ -98,7 +95,34 @@ function validar() {
 
 
     } else {
-        parrafo.innerText = "verifique los datos"
+       
+        if (!patronNombre.test(nombre.value)) {
+
+            nombre.style.borderColor = "red" 
+    
+        } if (!patronNombre.test(nombre.value)) {
+
+           parrafo.innerText="el nombre tiene que tener cinco caracteres o mas"
+    
+        } if (!patronNombre.test(apellido.value)) {
+            apellido.style.borderColor = "red"
+        } if (!patronNombre.test(apellido.value)) {
+            parrafo.innerText="el apellido tiene que tener cinco caracteres o mas"
+    
+        } 
+        
+        if (!patronEmail.test(email.value)) {
+            email.style.borderColor = "red"
+        
+        }if (!patronEmail.test(email.value)) {
+          
+        parrafo.innerText="el email tiene que tener un arroba y terminar en .com"
+        
+        
+        }if (mensaje.value == "") {
+            mensaje.style.borderColor = "red" 
+          
+        
         return false;
     }
 
@@ -109,31 +133,9 @@ function validar() {
 }
 
 
+}
 
 
-const btn = document.getElementById("enviar")
-btn.addEventListener("click", function comprobar() {
-    patronNombre = /^[a-zA-Z\s]{5,30}$/;
-    patronEmail = /^\S+@\S+\.\S+$/;
-    let nombre2 = document.getElementById("nombre")
-    let apellido2 = document.getElementById("apellido")
-    let email2 = document.getElementById("gmail")
-    let mensaje2 = document.getElementById("mensaje")
-
-    if (!patronNombre.test(nombre2.value)) {
-
-        nombre2.style.borderColor = "red"
-
-    } if (!patronNombre.test(apellido2.value)) {
-        apellido2.style.borderColor = "red"
-    } if (!patronEmail.test(email2.value)) {
-        email2.style.borderColor = "red"
-    } if (mensaje2.value == "") {
-        mensaje2.style.borderColor = "red"
-    }
-
-})
- 
 
 
 
