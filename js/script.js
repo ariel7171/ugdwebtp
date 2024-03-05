@@ -99,6 +99,8 @@ function cambio(th){
 }
 
 
-
+function cambiarImage(){
+    
+}
 
 
