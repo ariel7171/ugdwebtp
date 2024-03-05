@@ -7,17 +7,18 @@ body {
 body p{
     line-height: 2;
     color: rgb(66, 64, 64);
+    text-align: left;
 }
 
-#p1 {
-    width: 400px;
+.contimg{
+    display: flex;
+    justify-content: center;
+}
+
+.parr{
+    width: 70%;
     margin: 0 auto;
     text-align: center;
-}
-
-div {
-    text-align: center;
-    margin-bottom: 20px;
 }
 
 h2 {
@@ -25,8 +26,9 @@ h2 {
 }
 
 img {
-    width: 400px;
-    height: 300px;
+    width: 600px;
+    height: 450px;
+    border-radius: 3%;
 }
 
 p {
