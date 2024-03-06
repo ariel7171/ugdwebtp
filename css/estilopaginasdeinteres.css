@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f5ede9;
     font-size: 18px;
+    margin-top: 10px;
 }
 
  .contenedor {
@@ -18,6 +19,11 @@ h1 {
 }
 
 h2 {
+    color: #666;
+    text-align: center;
+}
+
+h3{
     color: #666;
 }
 
@@ -72,4 +78,6 @@ li {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+
 
