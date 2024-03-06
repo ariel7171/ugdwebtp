@@ -1,9 +1,4 @@
 
-
-
-
-
-
 function validar() {
 
     var miformulario = document.forms["formulario"]
@@ -18,25 +13,21 @@ function validar() {
     let apellido = miformulario.apellido;
     let mensaje = miformulario.mensaje
 
-    
-   
-  
-   
 
     if (patronNombre.test(nombre.value) && patronEmail.test(email.value) && patronNombre.test(apellido.value) && mensaje.value != "") {
 
 
-        parrafo.innerText="datos ingresados correctamente"
+        parrafo.innerText = "datos ingresados correctamente"
         let table = document.createElement('table');
         let thead = document.createElement('thead');
         let tbody = document.createElement('tbody');
-        
+
         table.appendChild(thead);
         table.appendChild(tbody);
-        
-        
+
+
         document.getElementById('body').appendChild(table);
-        
+
         let tr1 = document.createElement('tr');
         let thead1 = document.createElement('th');
         thead1.innerHTML = 'nombre';
@@ -46,99 +37,79 @@ function validar() {
         thead3.innerHTML = 'gmail';
         let thead4 = document.createElement('th');
         thead4.innerHTML = 'mensaje';
-        
+
         tr1.appendChild(thead1);
         tr1.appendChild(thead2);
         tr1.appendChild(thead3);
         tr1.appendChild(thead4);
         thead.appendChild(tr1);
-        
-        
-
-   
-   
-
-  let array=[nombre.value,apellido.value,email.value,mensaje.value];
-  for(let i=0;i<array.length;i++){
-      
-    let tr2 = document.createElement('tr');
-    let td2Nombre = document.createElement('td');
-    td2Nombre.innerHTML = array[0]
-    let td2Apellido = document.createElement('td');
-    td2Apellido.innerHTML = array[1]
-    let td2Gmail = document.createElement('td');
-    td2Gmail.innerHTML = array[2]
-    let td2Mensaje = document.createElement('td');
-    td2Mensaje.innerHTML = array[3]
-    tr2.appendChild(td2Nombre);
-    tr2.appendChild(td2Apellido);
-    tr2.appendChild(td2Gmail);
-    tr2.appendChild(td2Mensaje);
-    tbody.appendChild(tr2);
-    
-        break;
-   
-        
-       }
 
 
-        
-       
+        let array = [nombre.value, apellido.value, email.value, mensaje.value];
+        for (let i = 0; i < array.length; i++) {
+
+            let tr2 = document.createElement('tr');
+            let td2Nombre = document.createElement('td');
+            td2Nombre.innerHTML = array[0]
+            let td2Apellido = document.createElement('td');
+            td2Apellido.innerHTML = array[1]
+            let td2Gmail = document.createElement('td');
+            td2Gmail.innerHTML = array[2]
+            let td2Mensaje = document.createElement('td');
+            td2Mensaje.innerHTML = array[3]
+            tr2.appendChild(td2Nombre);
+            tr2.appendChild(td2Apellido);
+            tr2.appendChild(td2Gmail);
+            tr2.appendChild(td2Mensaje);
+            tbody.appendChild(tr2);
+
+            break;
+
+        }
 
 
 
     } else if (nombre.value == "" || email.value == "" || apellido.value == "" || mensaje.value == "") {
 
 
-        parrafo.innerText = "no deje espacios en blanco"
+        parrafo.innerText = "No deje espacios en blanco."
         return false;
 
 
     } else {
-       
+
         if (!patronNombre.test(nombre.value)) {
 
-            nombre.style.borderColor = "red" 
-    
+            nombre.style.borderColor = "red"
+
         } if (!patronNombre.test(nombre.value)) {
 
-           parrafo.innerText="el nombre tiene que tener cinco caracteres o mas"
-    
+            parrafo.innerText = "El nombre tiene que tener cinco caracteres o mas."
+
         } if (!patronNombre.test(apellido.value)) {
             apellido.style.borderColor = "red"
         } if (!patronNombre.test(apellido.value)) {
-            parrafo.innerText="el apellido tiene que tener cinco caracteres o mas"
-    
-        } 
-        
+            parrafo.innerText = "El apellido tiene que tener cinco caracteres o mas."
+
+        }
+
         if (!patronEmail.test(email.value)) {
             email.style.borderColor = "red"
-        
-        }if (!patronEmail.test(email.value)) {
-          
-        parrafo.innerText="el email tiene que tener un arroba y terminar en .com"
-        
-        
-        }if (mensaje.value == "") {
-            mensaje.style.borderColor = "red" 
-          
-        
-        return false;
+
+        } if (!patronEmail.test(email.value)) {
+
+            parrafo.innerText = "El email tiene que tener un arroba y terminar en .com"
+
+
+        } if (mensaje.value == "") {
+            mensaje.style.borderColor = "red"
+
+
+            return false;
+        }
+
+
     }
 
 
-
-
-
 }
-
-
-}
-
-
-
-
-
-
-
-
