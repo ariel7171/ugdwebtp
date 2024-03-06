@@ -107,6 +107,7 @@ h3 {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+<<<<<<< Updated upstream
 
 /* Estilos generales del pie de página */
 footer {
@@ -126,3 +127,17 @@ footer p {
 }
 
 /* Estilos para los enlaces dentro del pie de página */
+=======
+#anterior{
+    width: 200px;
+    height: 150px;
+}
+#medio{
+    width: 600px;
+    height: 450px;
+}
+#siguiente{
+    width: 200px;
+    height: 150px;
+}
+>>>>>>> Stashed changes
