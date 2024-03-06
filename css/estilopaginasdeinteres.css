@@ -6,14 +6,11 @@ body {
     font-size: 18px;
 }
 
-.contenedor {
-    width: 80%;
+ .contenedor {
+    width: 70%;
     margin: 0 auto;
-    padding: 30px;
-    background-color: #f5ede9;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    padding: 20px;
+} 
 
 h1 {
     text-align: center;
@@ -65,4 +62,14 @@ li {
     /*border-radius: 10px;*/
 }
 
+.fondo {
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
