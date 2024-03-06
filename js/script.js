@@ -81,8 +81,8 @@ function obtenerIndice(flag) { // Si flag es true el indice avanza sino retroced
     return aux;
 
 }
-let th = document.getElementById("home").value;
-let con = document.getElementById("contenedor").value;
+let th = document.getElementById("home");
+let con = document.getElementById("contenedor");
 function cambiarClick(th){
     th.style.backgroundColor = "#49362e";
     /*th.style.textDecoration = "line-through";*/
