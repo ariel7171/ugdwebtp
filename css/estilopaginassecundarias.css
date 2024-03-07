@@ -88,3 +88,29 @@ h3{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/* estilos del pie de pagina */
+.contf {
+    background-color: rgb(76, 66, 67);
+    padding: 20px;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+  }
+  
+  .div1 {
+    display: flex;
+    margin-left: 14%;
+    color: rgb(173, 146, 140);
+  }
+  
+  #div2 {
+    margin-right: 26%;
+    text-align: left;
+  }
+  
+  #div3 {
+    text-align: left;
+  }

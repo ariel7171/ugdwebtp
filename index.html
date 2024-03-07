@@ -8,65 +8,85 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="shortcut icon" href="./img/icono.png">
     <script src="./js/script.js" defer></script>
+    <script src="./js/scriptnav.js" defer></script>
 </head>
 
 <body>
-   
+
     <nav id="contenedo">
-            
+
         <div id="home" onmouseover="cambiarClick(this)" onmouseout="cambio(this)">
             <a href="index.html" style="text-decoration: none;color:rgb(173, 146, 140)">Home</a>
         </div>
         <div id="hoteles" onmouseover="cambiarClick(this)" onmouseout="cambio(this)">
-            <a href="./paginas/paginasdeinteres/paginasdeinteres.html" style="text-decoration: none; color:rgb(173, 146, 140)">Páginas de interés</a>
+            <a href="./paginas/paginasdeinteres/paginasdeinteres.html"
+                style="text-decoration: none; color:rgb(173, 146, 140)">Páginas de interés</a>
         </div>
         <div id="contacto" onmouseover="cambiarClick(this)" onmouseout="cambio(this)">
-            <a href="./paginas/contacto/contacto.html" style="text-decoration: none; color:rgb(173, 146, 140)">Contacto</a>
-    
+            <a href="./paginas/contacto/contacto.html"
+                style="text-decoration: none; color:rgb(173, 146, 140)">Contacto</a>
+
         </div>
         <div id="acercade" onmouseover="cambiarClick(this)" onmouseout="cambio(this)">
-            <a href="./paginas/aboutus/aboutus.html" style="text-decoration: none; color:rgb(173, 146, 140)">Acerca de:</a>
-    
+            <a href="./paginas/aboutus/aboutus.html" style="text-decoration: none; color:rgb(173, 146, 140)">Acerca
+                de:</a>
+
         </div>
     </nav>
-    
-    
-    <br>
 
-    <div class="fondo"></div>
+    <main>
+        <section>
+            <br>
 
-     <h2>LOS 10 DESTINOS MAS VISITADOS EN EL MUNDO</h2>
-    <div id="contenedor">
+            <div class="fondo"></div>
+
+            <h2>LOS 10 DESTINOS MAS VISITADOS EN EL MUNDO</h2>
+            <div id="contenedor">
 
 
-        <div id="anterior">
-        <img id="imgant" class="imgb" src="img/timessquare.jpg" alt="Anterior" onclick="anterior()" onmouseover="verSpan('Anterior','58px')" onmouseout="ocultarSpan('anterior')"></img>
-        </div>
-    <div id="clickparamasinfo" >
-        <a id="imglink" href="paginas/machupichu/machupichu.html">
-        <img id="imgpri" src="img/machupichu.jpg" onmouseover="verSpan('ClickParaMasInfo','150px')" onmouseout="ocultarSpan('clickparamasinfo')"></img>
-        </a>
-    </div>
-    <div id="siguiente">
-        <img id="imgsig" class="imgb" src="img/petra.jpg" alt="Siguiente" onclick="siguiente()" onmouseover="verSpan('Siguiente','58px')" onmouseout="ocultarSpan('siguiente')"></img>
-    </div>
-    </div>
-    <br>
-    <div id="contp">
+                <div id="anterior">
+                    <img id="imgant" class="imgb" src="img/timessquare.jpg" alt="Anterior" onclick="anterior()"
+                        onmouseover="verSpan('Anterior','58px')" onmouseout="ocultarSpan('anterior')"></img>
+                </div>
+                <div id="clickparamasinfo">
+                    <a id="imglink" href="paginas/machupichu/machupichu.html">
+                        <img id="imgpri" src="img/machupichu.jpg" onmouseover="verSpan('ClickParaMasInfo','150px')"
+                            onmouseout="ocultarSpan('clickparamasinfo')"></img>
+                    </a>
+                </div>
+                <div id="siguiente">
+                    <img id="imgsig" class="imgb" src="img/petra.jpg" alt="Siguiente" onclick="siguiente()"
+                        onmouseover="verSpan('Siguiente','58px')" onmouseout="ocultarSpan('siguiente')"></img>
+                </div>
+            </div>
+        </section>
+        <section>
+            <br>
+            <div id="contp">
 
-        <h3 id="titulo">Machu Picchu - Perú</h3>
+                <h3 id="titulo">Machu Picchu - Perú</h3>
 
-        <p id="parrafo1">Se destaca como el principal enclave arqueológico maya gracias a su ingenioso trazado urbano,
-            la majestuosidad de sus estructuras y la meticulosa labor en piedra de sus edificaciones. En su diseño se
-            aprovechó de manera notable la geografía de la colina que lo convirtió en un impresionante centro
-            ceremonial.</p>
-    </div>
+                <p id="parrafo1">Se destaca como el principal enclave arqueológico maya gracias a su ingenioso trazado
+                    urbano,
+                    la majestuosidad de sus estructuras y la meticulosa labor en piedra de sus edificaciones. En su
+                    diseño
+                    se
+                    aprovechó de manera notable la geografía de la colina que lo convirtió en un impresionante centro
+                    ceremonial.</p>
+            </div>
+
+            <br>
+        </section>
+    </main>
 
     <footer>
-        <div class="div1">
-            <pre style="color:rgb(173, 146, 140)" >     © 2024 Empresa ABC Ltda. Todos los derechos reservados                             Teléfono: +123456789 / Correo electrónico: info@empresaabc.com</pre>                         
-            <pre style="color:rgb(173, 146, 140);">     Dirección: Calle Principal 123, Ciudad, País                                                            Última actualización: 1 de marzo de 2024</pre>                           
-            
+        <div class="contf">
+            <div class="div1">
+                <div id="div2"><span>© 2024 Empresa GRUPO7 Ltda. Todos los derechos
+                        reservados</span><br><br><span>Teléfono: +5491141247321 , Email: grupo7@gmail.com</span></div>
+                <div id="div3"><span>Dirección: Calle: Ridavia 523, Ciudad: Florida </span><br><br><span>Última
+                        actualización: 1 de marzo de 2024</span></div>
+            </div>
         </div>
     </footer>
 </body>

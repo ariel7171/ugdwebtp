@@ -82,24 +82,8 @@ function obtenerIndice(flag) { // Si flag es true el indice avanza sino retroced
 
 }
 
-
-let th = document.getElementById("home");
-let con = document.getElementById("contenedor");
-
-function cambiarClick(th){
-    th.style.backgroundColor = "#49362e";
-    /*th.style.textDecoration = "line-through";*/
-    th.style.borderRadius = "10px"  
-}
-
-function cambio(th){
-    th.style.backgroundColor = "";
-   /* th.style.textDecoration = "";*/
-    th.style.borderRadius = ""
-}
-
-
-let span= document.createElement('span');
+//span
+let span= document.createElement('span'); //creo el span
 span.id = "Mensaje";
 span.style.border = '2px solid rgb(76, 66, 67)';
 span.style.borderRadius = '10px';
@@ -109,18 +93,14 @@ span.style.color = 'rgb(173, 146, 140)';
 span.style.position = 'relative';
 span.style.bottom = '0px';
 
-function verSpan(posicion, px) {
-    
+function verSpan(posicion, px) {  //lo muestro con los parametros pasados en el html
     span.textContent = posicion;
     span.style.left = px;
-    document.getElementById(posicion.toLowerCase()).appendChild(span);
-
+    document.getElementById(posicion.toLowerCase()).appendChild(span); 
 }
 
-function ocultarSpan(posicion) {
-
-    document.getElementById(posicion).removeChild(span);
-    
+function ocultarSpan(posicion) { //lo oculto
+    document.getElementById(posicion).removeChild(span); 
 }
 
 
