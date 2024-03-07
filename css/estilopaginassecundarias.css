@@ -4,18 +4,18 @@ body {
     font-size: 18px;
 }
 
-body p{
+p {
     line-height: 2;
     color: rgb(66, 64, 64);
     text-align: left;
 }
 
-.contimg{
+.contimg {
     display: flex;
     justify-content: center;
 }
 
-.parr{
+.parr {
     width: 70%;
     margin: 0 auto;
     text-align: center;
@@ -37,39 +37,39 @@ p {
     margin-bottom: 20px;
 }
 
-h3{
+h3 {
     text-align: center;
     color: rgb(53, 52, 52);
     text-shadow: 2px 2px 2px rgb(152, 150, 150);
 }
 
-#aboutusp{
+#aboutusp {
     width: 70%;
     margin: 0 auto;
 }
 
-#aboutusp img{
+#aboutusp img {
     margin-left: 4%;
     width: 90%;
 }
 
-#contenedo{
+#contenedo {
     display: flex;
     justify-content: center;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     height: 55px;
-    border: solid 2px  rgb(76, 66, 67);
+    border: solid 2px rgb(76, 66, 67);
     border-radius: 15px;
-    background-color:  rgb(76, 66, 67);
+    background-color: rgb(76, 66, 67);
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-#contenedo > div{
+#contenedo>div {
     text-align: center;
-    color:#49362e;
+    color: #49362e;
     border: 1px solid rgb(173, 146, 140)(46, 46, 47);
     background-color: rgb(173, 146, 140)(53, 53, 54);
     padding-top: 15px;
@@ -98,19 +98,19 @@ h3{
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 15px;
-  }
-  
-  .div1 {
+}
+
+.div1 {
     display: flex;
     margin-left: 14%;
     color: rgb(173, 146, 140);
-  }
-  
-  #div2 {
+}
+
+#div2 {
     margin-right: 26%;
     text-align: left;
-  }
-  
-  #div3 {
+}
+
+#div3 {
     text-align: left;
-  }
+}
