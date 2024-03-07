@@ -1,7 +1,7 @@
 
 function validar() {
 
-    var miformulario = document.forms["formulario"]
+    let miformulario = document.forms["formulario"]
     let patronNombre = /^[a-zA-Z\s]{5,30}$/;
 
     let patronEmail = /^\S+@\S+\.\S+$/;
@@ -17,7 +17,7 @@ function validar() {
     if (patronNombre.test(nombre.value) && patronEmail.test(email.value) && patronNombre.test(apellido.value) && mensaje.value != "") {
 
 
-        parrafo.innerText = "datos ingresados correctamente"
+        parrafo.innerText = "Datos ingresados correctamente"
         let table = document.createElement('table');
         let thead = document.createElement('thead');
         let tbody = document.createElement('tbody');
@@ -25,18 +25,21 @@ function validar() {
         table.appendChild(thead);
         table.appendChild(tbody);
 
-
-        document.getElementById('body').appendChild(table);
+        table.id = 'tabla';
+        miformulario.appendChild(table);
+        
+        miformulario.style.position = 'relative';
+        miformulario.style.left = '-10px';
 
         let tr1 = document.createElement('tr');
         let thead1 = document.createElement('th');
-        thead1.innerHTML = 'nombre';
+        thead1.innerHTML = 'Nombre';
         let thead2 = document.createElement('th');
-        thead2.innerHTML = 'apellido';
+        thead2.innerHTML = 'Apellido';
         let thead3 = document.createElement('th');
-        thead3.innerHTML = 'gmail';
+        thead3.innerHTML = 'Email';
         let thead4 = document.createElement('th');
-        thead4.innerHTML = 'mensaje';
+        thead4.innerHTML = 'Mensaje';
 
         tr1.appendChild(thead1);
         tr1.appendChild(thead2);
