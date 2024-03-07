@@ -39,16 +39,16 @@
     <div id="contenedor">
 
 
-        <div id="anterior" onmouseover="cambiarSpam(this)" onmouseout="todoBlanco(this)" onclick="anterior()">
-        <img id="imgant" class="imgb" src="img/timessquare.jpg" alt="Anterior"></img>
+        <div id="anterior">
+        <img id="imgant" class="imgb" src="img/timessquare.jpg" alt="Anterior" onclick="anterior()" onmouseover="verSpan('Anterior','58px')" onmouseout="ocultarSpan('anterior')"></img>
         </div>
-    <div id="medio" onmouseover="cambiarSpam2(this)" onmouseout="todoBlanco2(this)">
+    <div id="clickparamasinfo" >
         <a id="imglink" href="paginas/machupichu/machupichu.html">
-        <img id="imgpri" src="img/machupichu.jpg"></img>
+        <img id="imgpri" src="img/machupichu.jpg" onmouseover="verSpan('ClickParaMasInfo','150px')" onmouseout="ocultarSpan('clickparamasinfo')"></img>
         </a>
     </div>
-    <div id="siguiente" onmouseover="cambiarSpam3(this)" onmouseout="todoBlanco3(this)" onclick="siguiente()">
-        <img id="imgsig" class="imgb" src="img/petra.jpg" alt="Siguiente" onclick="siguiente()"></img>
+    <div id="siguiente">
+        <img id="imgsig" class="imgb" src="img/petra.jpg" alt="Siguiente" onclick="siguiente()" onmouseover="verSpan('Siguiente','58px')" onmouseout="ocultarSpan('siguiente')"></img>
     </div>
     </div>
     <br>

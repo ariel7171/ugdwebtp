@@ -5,27 +5,30 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
 }
-#contenedo{
+
+#contenedo {
     display: flex;
     justify-content: center;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     height: 55px;
-    border: solid 2px  rgb(76, 66, 67);
+    border: solid 2px rgb(76, 66, 67);
     border-radius: 15px;
-    background-color:  rgb(76, 66, 67);
+    background-color: rgb(76, 66, 67);
     padding-top: 10px;
     padding-bottom: 10px;
 }
-a{
-  font-family: "Pathway Extreme", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, 
-  "Noto Sans", sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
-  "Helvetica Neue", sans-serif;
+
+a {
+    font-family: "Pathway Extreme", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell,
+        "Noto Sans", sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+        "Helvetica Neue", sans-serif;
 }
-#contenedo > div{
+
+#contenedo>div {
     text-align: center;
-    color:#49362e;
+    color: #49362e;
     border: 1px solid rgb(173, 146, 140)(46, 46, 47);
     background-color: rgb(173, 146, 140)(53, 53, 54);
     padding-top: 15px;
@@ -35,19 +38,15 @@ a{
 }
 
 #contenedor {
-    justify-content: center;
-    justify-content: space-evenly;
     display: flex;
-
+    justify-content: center;
 }
 
 #imgant,
 #imgsig {
     width: 200px;
     height: 150px;
-
     border-radius: 3%;
-    margin-top: 10%;
     cursor: pointer;
 }
 
@@ -56,10 +55,9 @@ a{
 }
 
 #imgpri {
-    width: 600px;
-    height: 450px;
+    width: 450px;
+    height: 350px;
     border-radius: 3%;
-    cursor: pointer;
 }
 
 #contB {
@@ -79,7 +77,7 @@ h2 {
 #contp {
     /* width: 500px; */
     margin: 0 auto;
-     width: 70%; 
+    width: 70%;
     text-align: left;
 }
 
@@ -109,7 +107,7 @@ h3 {
 }
 
 
-/* Estilos generales del pie de página */
+/* estilos del pie de pagina */
 footer {
     background-color: rgb(76, 66, 67);
     padding: 20px;
@@ -117,27 +115,35 @@ footer {
     font-size: 14px;
     padding-top: 15px;
     padding-left: 10px;
-    padding-right: 10px; 
+    padding-right: 10px;
     border-radius: 15px;
 }
 
-/* Estilos para los párrafos dentro del pie de página */
+/* estilos para los parrafos dentro del pie de pagina */
 footer p {
     margin-bottom: 10px;
-    color:rgb(173, 146, 140);
+    color: rgb(173, 146, 140);
 }
 
-/* Estilos para los enlaces dentro del pie de página */
+/* estilos para las imagenes dentro de los div */
 
-#anterior{
+#anterior {
+    margin-top: 8%;
     width: 200px;
     height: 150px;
 }
-#medio{
-    width: 600px;
-    height: 450px;
+
+#clickparamasinfo {
+    width: 450px;
+    height: 350px;
+    border-radius: 3%;
+    cursor: pointer;
+    margin-left: 4%;
+    margin-right: 4%;
 }
-#siguiente{
+
+#siguiente {
+    margin-top: 8%;
     width: 200px;
     height: 150px;
 }
