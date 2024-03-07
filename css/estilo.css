@@ -115,9 +115,10 @@ footer {
     padding: 20px;
     text-align: center;
     font-size: 14px;
-   margin-left: 125px;
-   margin-right: 125px;
-   margin-bottom: 5px
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    border-radius: 15px;
 }
 
 /* Estilos para los párrafos dentro del pie de página */
