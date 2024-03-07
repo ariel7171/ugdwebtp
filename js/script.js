@@ -99,8 +99,123 @@ function cambio(th){
 }
 
 
-function cambiarImage(){
+let span= document.createElement('span');
+function cambiarSpam() {
+    // Crear el elemento span
     
+    if(span){
+    span.id = "Mensaje";
+    span.textContent = 'Anterior';
+    span.style.border = '2px solid rgb(76, 66, 67)';
+    span.style.borderRadius = '10px';
+    span.style.backgroundColor = 'rgb(76, 66, 67)';
+    span.style.fontFamily = '"Pathway Extreme", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif';
+    span.style.color = 'rgb(173, 146, 140)';
+    span.style.color = 'rgb(173, 146, 140)';
+    span.style.position = 'relative';
+    span.style.left = '58px';
+    span.style.bottom = '0px';
+    console.log(span)  
+    document.getElementById("anterior").appendChild(span);
+    }else{
+        console.log("no se pudo cargar el elemento")
+    }
+}
+
+function todoBlanco() {
+   
+    if (span) {
+        // Remover el span del cuerpo del documento
+        span.textContent = '';
+        span.style.border = '';
+        span.style.borderRadius = '';
+        span.style.backgroundColor = '';
+        span.style.fontFamily = '';
+        span.style.color = '';
+        span.style.color = '';
+        span.style.position = '';
+        span.style.left = '';
+        span.style.top = '';
+        document.getElementById("anterior").removeChild(span);
+    }
+}
+function cambiarSpam2() {
+    // Crear el elemento span
+    
+    if(span){
+    span.id = "Mensaje";
+    span.textContent = 'ClickParaMasInfo';
+    span.style.border = '2px solid rgb(76, 66, 67)';
+    span.style.borderRadius = '10px';
+    span.style.backgroundColor = 'rgb(76, 66, 67)';
+    span.style.fontFamily = '"Pathway Extreme", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif';
+    span.style.color = 'rgb(173, 146, 140)';
+    span.style.color = 'rgb(173, 146, 140)';
+    span.style.position = 'relative';
+    span.style.left = '230px';
+    span.style.bottom = '0px';
+    console.log(span)  
+    document.getElementById("medio").appendChild(span);
+    }else{
+        console.log("no se pudo cargar el elemento")
+    }
+}
+
+function todoBlanco2() {
+   
+    if (span) {
+        // Remover el span del cuerpo del documento
+        span.textContent = '';
+        span.style.border = '';
+        span.style.borderRadius = '';
+        span.style.backgroundColor = '';
+        span.style.fontFamily = '';
+        span.style.color = '';
+        span.style.color = '';
+        span.style.position = '';
+        span.style.left = '';
+        span.style.top = '';
+        document.getElementById("medio").removeChild(span);
+    }
+}
+function cambiarSpam3() {
+    // Crear el elemento span
+    
+    if(span){
+    span.id = "Mensaje";
+    span.textContent = 'Siguiente';
+    span.style.border = '2px solid rgb(76, 66, 67)';
+    span.style.borderRadius = '10px';
+    span.style.backgroundColor = 'rgb(76, 66, 67)';
+    span.style.fontFamily = '"Pathway Extreme", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif';
+    span.style.color = 'rgb(173, 146, 140)';
+    span.style.color = 'rgb(173, 146, 140)';
+    span.style.position = 'relative';
+    span.style.right = '-50px';
+    span.style.bottom = '0px';
+    console.log(span)  
+    document.getElementById("siguiente").appendChild(span);
+    }else{
+        console.log("no se pudo cargar el elemento")
+    }
+}
+
+function todoBlanco3() {
+   
+    if (span) {
+        // Remover el span del cuerpo del documento
+        span.textContent = '';
+        span.style.border = '';
+        span.style.borderRadius = '';
+        span.style.backgroundColor = '';
+        span.style.fontFamily = '';
+        span.style.color = '';
+        span.style.color = '';
+        span.style.position = '';
+        span.style.left = '';
+        span.style.top = '';
+        document.getElementById("siguiente").removeChild(span);
+    }
 }
 
 

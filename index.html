@@ -38,14 +38,18 @@
      <h2>LOS 10 DESTINOS MAS VISITADOS EN EL MUNDO</h2>
     <div id="contenedor">
 
-        <img id="imgant" class="imgb" src="img/timessquare.jpg" alt="Anterior" onclick="anterior()"></img>
-        
+
+        <div id="anterior" onmouseover="cambiarSpam(this)" onmouseout="todoBlanco(this)" onclick="anterior()">
+        <img id="imgant" class="imgb" src="img/timessquare.jpg" alt="Anterior"></img>
+        </div>
+    <div id="medio" onmouseover="cambiarSpam2(this)" onmouseout="todoBlanco2(this)">
         <a id="imglink" href="paginas/machupichu/machupichu.html">
         <img id="imgpri" src="img/machupichu.jpg"></img>
         </a>
-
+    </div>
+    <div id="siguiente" onmouseover="cambiarSpam3(this)" onmouseout="todoBlanco3(this)" onclick="siguiente()">
         <img id="imgsig" class="imgb" src="img/petra.jpg" alt="Siguiente" onclick="siguiente()"></img>
-        <br>
+    </div>
     </div>
     <br>
     <div id="contp">
